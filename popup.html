@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebAvenger</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            width: 300px;
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        p {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        #editListBtn, #addBtn {
+            display: block;
+            margin: 0 auto;
+            margin-bottom: 20px;
+        }
+        #blockedWebsites {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-gap: 10px;
+        }
+        #blockedWebsites label {
+            white-space: nowrap;
+        }
+        #addWebsiteInput {
+            display: none;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome to SimpleAdBlock</h1>
+    <p>This extension blocks common data fetching websites to enhance your browsing privacy.</p>
+    <p>You can manage the extension settings from the browser toolbar.</p>
+    <button id="editListBtn">Edit List</button>
+    <button id="addBtn">Add</button>
+    <div id="blockedWebsites"></div>
+    <input type="text" id="addWebsiteInput" placeholder="Enter website URL">
+    <script src="popup.js"></script>
+</body>
+</html>

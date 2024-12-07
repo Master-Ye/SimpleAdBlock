@@ -1,0 +1,13 @@
+{
+  "manifest_version": 3,
+  "name": "SimpleAdBlock",
+  "version": "1.0.0",
+  "permissions": ["declarativeNetRequest", "storage"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "host_permissions": ["*://*/*"],
+  "action": {
+    "default_popup": "popup.html"
+  }
+}
